@@ -27,7 +27,7 @@ Imports: boot (>= 1.3-8), car (>= 2.0-21), Matrix (>= 1.1-4), graphics
 Suggests: arm (>= 1.7-05), gam (>= 1.09.1), glmnet (>= 1.9-8), mice (>=
         2.22), mitools (>= 2.3), rpart (>= 4.1-8), SuperLearner (>=
         2.0-15), VGAM (>= 1.0-0)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Encoding: UTF-8
 ByteCompile: yes
 NeedsCompilation: no

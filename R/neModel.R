@@ -331,10 +331,13 @@ neModel <- function (formula, family = gaussian, expData, xFit, se = c("bootstra
         1L), progress = TRUE, ...) 
 {
     args <- as.list(match.call()) 
+    message(args)
     if (missing(expData)) {
       expData <- parent.frame(2)$envir
     }
+    message(args)
     args$expData <- quote(expData)
+    message(args)
     if (!is.null(args$xFit)) args$xFit <- quote(xFit)
     args[[1]] <- substitute(neModelEst)
     args <- c(args[[1]], args[names(args) %in% names(formals(neModelEst))])
